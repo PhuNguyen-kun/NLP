@@ -59,3 +59,38 @@
 - Hiểu và triển khai được mô hình ngôn ngữ thống kê đơn giản.
 - Làm quen với khái niệm xác suất trong xử lý ngôn ngữ.
 - Nhận ra giới hạn và sự cần thiết của các phương pháp hiện đại hơn.
+
+---------------------------------------------------------------------------------------------------------------------------------
+## Week 3: Word Embeddings – From Statistical to Neural NLP
+
+**Mục tiêu:**
+- Làm quen với khái niệm word embedding.
+- Hiểu cách biểu diễn từ bằng vector số có ngữ nghĩa.
+- So sánh các kỹ thuật embedding phổ biến: Word2Vec, GloVe, FastText.
+- Huấn luyện mô hình Word2Vec trên một corpus nhỏ bằng Gensim.
+
+**Kiến thức chính:**
+- **Word Embedding là gì?**
+  - Là cách biểu diễn từ dưới dạng vector số (thường là 50–300 chiều).
+  - Các từ có ngữ nghĩa hoặc chức năng tương tự sẽ có vector gần nhau.
+
+- **Lý do cần embedding:**
+  - Các phương pháp truyền thống (n-gram, BoW, one-hot) không biểu diễn được ngữ nghĩa.
+  - Word embeddings giúp máy hiểu được mối quan hệ giữa các từ.
+
+- **Các kỹ thuật phổ biến:**
+  - **Word2Vec**: Học ngữ cảnh từ dữ liệu; gồm CBOW và Skip-gram.
+  - **GloVe**: Dựa trên ma trận đồng xuất hiện toàn cục.
+  - **FastText**: Học cả các đoạn từ con (subwords) → tốt cho từ mới, từ hiếm.
+
+**Thực hành:**
+- Cài đặt thư viện `gensim`, `scikit-learn`, `matplotlib`.
+- Dùng `simple_preprocess()` để xử lý văn bản.
+- Huấn luyện mô hình `Word2Vec` với các tham số: vector_size=50, window=2, sg=1.
+- Tìm các từ tương tự bằng `most_similar()`.
+- Trực quan hóa vector từ bằng TSNE (giảm chiều) và vẽ biểu đồ 2D.
+
+**Kết quả đạt được:**
+- Hiểu và áp dụng được word embeddings trong NLP.
+- Nắm được sự khác nhau giữa các kỹ thuật embedding.
+- Có khả năng triển khai và đánh giá một mô hình Word2Vec cơ bản.
