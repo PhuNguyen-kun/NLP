@@ -94,3 +94,37 @@
 - Hiểu và áp dụng được word embeddings trong NLP.
 - Nắm được sự khác nhau giữa các kỹ thuật embedding.
 - Có khả năng triển khai và đánh giá một mô hình Word2Vec cơ bản.
+
+---------------------------------------------------------------------------------------------------------------------------------
+## Week 4: Recurrent Neural Networks (RNN), LSTM, and Sentiment Analysis
+
+**Mục tiêu:**
+- Hiểu và xây dựng mô hình **Recurrent Neural Networks (RNN)** để xử lý dữ liệu tuần tự.
+- Cải tiến mô hình với **LSTM** (Long Short-Term Memory) để giải quyết vấn đề vanishing gradient trong RNN.
+- Áp dụng mô hình **LSTM** để giải quyết bài toán **Phân tích cảm xúc** (Sentiment Analysis) trên bộ dữ liệu **IMDB**.
+
+**Kiến thức chính:**
+- **RNN** (Recurrent Neural Networks): Mạng nơ-ron hồi tiếp, xử lý dữ liệu tuần tự, giúp nhớ thông tin từ các bước trước trong chuỗi dữ liệu.
+- **LSTM** (Long Short-Term Memory): Cải tiến của RNN, giúp xử lý các phụ thuộc dài hạn, giải quyết vấn đề vanishing gradient trong RNN.
+- **Sentiment Analysis**: Phân loại cảm xúc của văn bản (tích cực hoặc tiêu cực).
+
+**Các bước thực hiện:**
+1. **Tải và tiền xử lý dữ liệu IMDB**:
+   - Tải dữ liệu IMDB, bao gồm các bài đánh giá phim.
+   - Tiền xử lý dữ liệu bằng cách chuyển văn bản thành chỉ số từ và **pad** các chuỗi có độ dài giống nhau.
+   
+2. **Xây dựng mô hình LSTM**:
+   - Sử dụng **LSTM layer** trong TensorFlow để xây dựng mô hình học sâu.
+   - Sử dụng **Embedding layer** để chuyển từ các chỉ số từ thành vector nhúng.
+   - Sử dụng **Dense layer** để phân loại kết quả (0 = tiêu cực, 1 = tích cực).
+
+3. **Huấn luyện và đánh giá mô hình**:
+   - Huấn luyện mô hình với dữ liệu huấn luyện.
+   - Đánh giá mô hình trên tập dữ liệu kiểm tra (test data).
+
+4. **Dự đoán trên dữ liệu mới**:
+   - Dự đoán cảm xúc của các bài đánh giá phim mới.
+
+**Kết quả đạt được:**
+- Mô hình **LSTM** với độ chính xác tốt trong việc phân tích cảm xúc của các bài đánh giá phim.
+- Có khả năng **dự đoán cảm xúc** (positive/negative) cho các bài đánh giá mới mà không cần huấn luyện lại mô hình.
