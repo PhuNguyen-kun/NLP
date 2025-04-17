@@ -128,3 +128,41 @@
 **Kết quả đạt được:**
 - Mô hình **LSTM** với độ chính xác tốt trong việc phân tích cảm xúc của các bài đánh giá phim.
 - Có khả năng **dự đoán cảm xúc** (positive/negative) cho các bài đánh giá mới mà không cần huấn luyện lại mô hình.
+
+---------------------------------------------------------------------------------------------------------------------------------
+## Week 5: Transformer Model and Attention Mechanism
+
+**Mục tiêu:**
+- Hiểu kiến trúc **Transformer** và cơ chế **self-attention**.
+- Giải thích cách mà Transformer vượt trội hơn các mô hình tuần tự (RNN, LSTM).
+- Khám phá cách mà **self-attention** và **multi-head attention** giúp mô hình học các mối quan hệ phức tạp trong chuỗi văn bản.
+
+**Kiến thức chính:**
+- **Transformer** là mô hình học sâu không cần xử lý tuần tự mà sử dụng cơ chế **attention** để xử lý toàn bộ chuỗi đầu vào cùng lúc, giúp cải thiện hiệu quả tính toán và khả năng ghi nhớ mối quan hệ xa.
+- **Self-attention** giúp mỗi từ trong câu **chú ý đến các từ khác** trong câu, tạo ra một biểu diễn tốt hơn về ngữ nghĩa và ngữ pháp.
+- **Multi-head attention**: Thay vì chỉ có một cơ chế attention, mô hình sử dụng **nhiều "đầu chú ý"** để học được các mối quan hệ khác nhau trong dữ liệu.
+- **Encoder-Decoder**: Kiến trúc của Transformer gồm **encoder** (xử lý đầu vào) và **decoder** (sinh ra đầu ra), trong đó **self-attention** là một phần quan trọng của cả hai.
+
+**Các bước thực hiện:**
+1. **Khám phá mô hình Transformer**:
+   - Tìm hiểu cách thức hoạt động của **self-attention** và **multi-head attention** trong Transformer.
+   - So sánh với các mô hình tuần tự như RNN, LSTM.
+   
+2. **Sử dụng mô hình Transformer với Hugging Face**:
+   - Tải các mô hình pre-trained như **BERT**, **GPT**, **T5** từ **Hugging Face Transformers** để áp dụng vào các tác vụ NLP như phân loại văn bản, sinh văn bản, phân tích cảm xúc.
+
+3. **Hiểu cơ chế attention và ứng dụng trong NLP**:
+   - Nắm vững cách Transformer học các mối quan hệ xa trong văn bản mà không cần xử lý tuần tự.
+   - Sử dụng mô hình Transformer để giải quyết các bài toán như **phân loại văn bản** và **trả lời câu hỏi**.
+
+**Kết quả đạt được:**
+- Nắm vững cơ chế hoạt động của **Transformer**, **self-attention** và **multi-head attention**.
+- Hiểu rõ cách mà **Transformer** giải quyết các vấn đề của mô hình tuần tự (RNN/LSTM) trong NLP.
+- Sử dụng mô hình Transformer pre-trained từ **Hugging Face** để thực hiện các tác vụ NLP mà không cần huấn luyện lại từ đầu.
+
+### **Kết quả đạt được**:
+- **Hiểu** cách thức hoạt động của các lớp attention trong Transformer.
+- **Ứng dụng** các mô hình Transformer cho các tác vụ NLP như phân loại văn bản, sinh văn bản, và trả lời câu hỏi.
+- **Khám phá** sự khác biệt và vượt trội của Transformer so với các mô hình tuần tự (RNN/LSTM).
+
+
