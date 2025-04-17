@@ -160,9 +160,3 @@
 - Hiểu rõ cách mà **Transformer** giải quyết các vấn đề của mô hình tuần tự (RNN/LSTM) trong NLP.
 - Sử dụng mô hình Transformer pre-trained từ **Hugging Face** để thực hiện các tác vụ NLP mà không cần huấn luyện lại từ đầu.
 
-### **Kết quả đạt được**:
-- **Hiểu** cách thức hoạt động của các lớp attention trong Transformer.
-- **Ứng dụng** các mô hình Transformer cho các tác vụ NLP như phân loại văn bản, sinh văn bản, và trả lời câu hỏi.
-- **Khám phá** sự khác biệt và vượt trội của Transformer so với các mô hình tuần tự (RNN/LSTM).
-
-
