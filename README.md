@@ -159,4 +159,33 @@
 - Nắm vững cơ chế hoạt động của **Transformer**, **self-attention** và **multi-head attention**.
 - Hiểu rõ cách mà **Transformer** giải quyết các vấn đề của mô hình tuần tự (RNN/LSTM) trong NLP.
 - Sử dụng mô hình Transformer pre-trained từ **Hugging Face** để thực hiện các tác vụ NLP mà không cần huấn luyện lại từ đầu.
+  
+---------------------------------------------------------------------------------------------------------------------------------
+## Week 6: Advanced Applications of Transformers and Ethical Considerations
 
+**Mục tiêu:**
+- Khám phá **ứng dụng nâng cao của Transformer** trong các hệ thống thực tế.
+- Thảo luận về các mô hình như **GPT**, **BERT**, bao gồm cả quá trình **fine-tuning** (tinh chỉnh) mô hình cho các tác vụ cụ thể.
+- Hiểu về các vấn đề **đạo đức** và **giới hạn** khi sử dụng các mô hình Transformer quy mô lớn như **ChatGPT**.
+
+**Kiến thức chính:**
+- **GPT (Generative Pre-trained Transformer)**: Mô hình mạnh mẽ cho việc **sinh văn bản** tự động. Được huấn luyện để **tiếp tục văn bản** và tạo ra câu trả lời hội thoại.
+- **BERT (Bidirectional Encoder Representations from Transformers)**: Mô hình **encoder** mạnh mẽ dùng cho các tác vụ như **phân loại văn bản**, **trả lời câu hỏi**, và **tóm tắt văn bản**.
+- **Fine-tuning**: Quá trình **tinh chỉnh** các mô hình đã huấn luyện sẵn (pre-trained models) trên một bộ dữ liệu cụ thể để làm việc hiệu quả hơn cho các tác vụ chuyên biệt.
+- **ChatGPT**: Mô hình GPT-3 được fine-tune cho **hội thoại tự động**. Các ứng dụng bao gồm hỗ trợ khách hàng và các chatbot.
+- **Các thách thức khi triển khai các mô hình Transformer quy mô lớn**: Bao gồm các vấn đề về chi phí tính toán, hiệu suất, và các vấn đề **đạo đức** như **bias**, **bảo mật**, và **quyền riêng tư**.
+
+**Các bước thực hiện:**
+1. **Khám phá và hiểu các mô hình GPT và BERT**:
+   - Học cách các mô hình **GPT** và **BERT** hoạt động và cách chúng có thể được sử dụng cho các tác vụ khác nhau như **phân loại văn bản**, **trả lời câu hỏi**, và **sinh văn bản**.
+   
+2. **Fine-tuning mô hình pre-trained**:
+   - Tinh chỉnh mô hình **BERT** hoặc **GPT** cho các tác vụ như **tóm tắt văn bản**, **phân loại cảm xúc** hoặc **trả lời câu hỏi** với một bộ dữ liệu công khai.
+   
+3. **Tìm hiểu về các thách thức khi triển khai mô hình lớn**:
+   - Phân tích các thách thức khi triển khai **GPT** hoặc **BERT** trong môi trường thực tế, như **chi phí tính toán** cao, **quản lý dữ liệu**, và các vấn đề về **bảo mật** và **đạo đức**.
+
+**Kết quả đạt được:**
+- Hiểu rõ cách mà các mô hình như **GPT**, **BERT** hoạt động ở quy mô lớn và cách **fine-tuning** có thể làm chúng hoạt động tốt hơn cho các tác vụ cụ thể.
+- Nắm được các vấn đề **đạo đức** và **giới hạn** khi triển khai các mô hình này vào các hệ thống thực tế, đặc biệt là **ChatGPT** và các ứng dụng trò chuyện tự động.
+- Có khả năng **fine-tune mô hình pre-trained** cho các tác vụ NLP chuyên biệt và hiểu được các bước triển khai mô hình vào thực tế.
